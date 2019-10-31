@@ -1,0 +1,9 @@
+ó
+Ñ#†]c           @   s   d d  „ Z d S(   c         C   sz   i d d 6d d 6d d 6d d 6d	 d
+ 6} i d d 6d d 6d d 6d d 6d d
+ 6} |  d k rb | S|  d k rr | S| Sd  S(   Nt   Androidt   platformNames   6.0.1t   platformVersiont   125cb6a6t
+   deviceNamet   ANDROID_PHONEt   ENV_DEVICE_TYPEt   ANDROIDt   ENV_DEVICE_OSt   iOSs   13.0s   iPhone 11 Pro Maxt	   IOS_PHONEt   IOSs	   iPhone XR(    (   t   argt   D1t   D2(    (    sn   /Users/priten/eclipse-workspace/MaySession/MobileAutomationSession/Resources/Config/DeviceList.pyt   get_variables   s    
+
+
+
+N(   t   NoneR   (    (    (    sn   /Users/priten/eclipse-workspace/MaySession/MobileAutomationSession/Resources/Config/DeviceList.pyt   <module>   s    

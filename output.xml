@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20191029 22:02:18.484" generator="Robot 3.1.1 (Python 2.7.10 on darwin)">
+<suite source="/Users/priten/eclipse-workspace/MaySession/MobileAutomationExercise" id="s1" name="MobileAutomationExercise">
+<suite source="/Users/priten/eclipse-workspace/MaySession/MobileAutomationExercise/Scripts" id="s1-s1" name="Scripts">
+<suite source="/Users/priten/eclipse-workspace/MaySession/MobileAutomationExercise/Scripts/UserStories.robot" id="s1-s1-s1" name="UserStories">
+<test id="s1-s1-s1-t1" name="US4">
+<kw name="When Mobile Application Is Launched" library="MobileCommon">
+<doc>Keyword to Open AUT</doc>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${ENV_DEVICE_OS}' == 'IOS'</arg>
+<arg>Open iOS Application</arg>
+<arg>ELSE</arg>
+<arg>Open Android Application</arg>
+</arguments>
+<kw name="Open Android Application" library="MobileCommon">
+<doc>Keyword to Open Android App</doc>
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${ENV_SERVER_URL}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>platformVersion=${platformVersion}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>app=${ENV_APK_LOCATION}</arg>
+</arguments>
+<status status="PASS" endtime="20191029 22:02:27.733" starttime="20191029 22:02:18.911"></status>
+</kw>
+<status status="PASS" endtime="20191029 22:02:27.734" starttime="20191029 22:02:18.910"></status>
+</kw>
+<status status="PASS" endtime="20191029 22:02:27.734" starttime="20191029 22:02:18.909"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" endtime="20191029 22:02:27.735" starttime="20191029 22:02:27.734"></status>
+</kw>
+<status status="PASS" endtime="20191029 22:02:27.736" starttime="20191029 22:02:18.909"></status>
+</kw>
+<kw name="Then Top Bar Is Always Visible" library="TestAppPage">
+<doc>KW to Verify Top Bar Is Always Visible</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${lbl_top_bar}</arg>
+<arg>10s</arg>
+<arg>Top Bar Is Not Visible</arg>
+</arguments>
+<status status="PASS" endtime="20191029 22:02:28.206" starttime="20191029 22:02:27.736"></status>
+</kw>
+<kw name="Tap on Dashboard tab" library="TestAppPage">
+<doc>Tap on Dashboard Tab</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${lbl_DashBoard_Tab}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" endtime="20191029 22:02:28.248" starttime="20191029 22:02:28.207"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``.</doc>
+<arguments>
+<arg>${lbl_DashBoard_Tab}</arg>
+</arguments>
+<status status="PASS" endtime="20191029 22:02:28.502" starttime="20191029 22:02:28.249"></status>
+</kw>
+<status status="PASS" endtime="20191029 22:02:28.503" starttime="20191029 22:02:28.206"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${lbl_top_bar}</arg>
+<arg>10s</arg>
+<arg>Top Bar Is Not Visible</arg>
+</arguments>
+<status status="PASS" endtime="20191029 22:02:29.197" starttime="20191029 22:02:28.503"></status>
+</kw>
+<kw name="Tap on Notifications tab" library="TestAppPage">
+<doc>Tap on Notifications tab</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${lbl_Notifications_Tab}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" endtime="20191029 22:02:29.237" starttime="20191029 22:02:29.198"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``.</doc>
+<arguments>
+<arg>${lbl_Notifications_Tab}</arg>
+</arguments>
+<status status="PASS" endtime="20191029 22:02:29.445" starttime="20191029 22:02:29.237"></status>
+</kw>
+<status status="PASS" endtime="20191029 22:02:29.446" starttime="20191029 22:02:29.198"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${lbl_top_bar}</arg>
+<arg>10s</arg>
+<arg>Top Bar Is Not Visible</arg>
+</arguments>
+<status status="PASS" endtime="20191029 22:02:30.205" starttime="20191029 22:02:29.446"></status>
+</kw>
+<status status="PASS" endtime="20191029 22:02:30.205" starttime="20191029 22:02:27.736"></status>
+</kw>
+<kw name="And Text testApp on the bar Is Displayed" library="TestAppPage">
+<doc>KW to Text testApp on the bar Is Displayed</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>xpath=//*[contains(@resource-id,"action_bar")]//*[@text="testApp"]</arg>
+<arg>2s</arg>
+<arg>Text testApp is Not Displayed on Screen</arg>
+</arguments>
+<status status="PASS" endtime="20191029 22:02:30.367" starttime="20191029 22:02:30.206"></status>
+</kw>
+<status status="PASS" endtime="20191029 22:02:30.367" starttime="20191029 22:02:30.206"></status>
+</kw>
+<status status="PASS" endtime="20191029 22:02:30.368" critical="yes" starttime="20191029 22:02:18.908"></status>
+</test>
+<status status="PASS" endtime="20191029 22:02:30.368" starttime="20191029 22:02:18.532"></status>
+</suite>
+<status status="PASS" endtime="20191029 22:02:30.370" starttime="20191029 22:02:18.530"></status>
+</suite>
+<status status="PASS" endtime="20191029 22:02:30.372" starttime="20191029 22:02:18.508"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="MobileAutomationExercise" pass="1">MobileAutomationExercise</stat>
+<stat fail="0" id="s1-s1" name="Scripts" pass="1">MobileAutomationExercise.Scripts</stat>
+<stat fail="0" id="s1-s1-s1" name="UserStories" pass="1">MobileAutomationExercise.Scripts.UserStories</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

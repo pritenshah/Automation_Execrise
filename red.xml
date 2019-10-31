@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfiguration>
+    <configVersion>2</configVersion>
+    <relativeTo>WORKSPACE</relativeTo>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary" path="/Library/Python/2.7/site-packages/SeleniumLibrary/__init__.py"/>
+    <referencedLibrary type="PYTHON" name="ExcelLibrary" path="/Library/Python/2.7/site-packages/ExcelLibrary.py"/>
+    <referencedLibrary type="PYTHON" name="AppiumLibrary" path="/Library/Python/2.7/site-packages/AppiumLibrary/__init__.py"/>
+    <pythonpath/>
+    <classpath/>
+    <variableFiles path="WEbAutomationSession/Resources/Config/GlobalVariable.py"/>
+    <excludedForValidation/>
+    <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>
+    <validatedFileMaxSize>1024</validatedFileMaxSize>
+</projectConfiguration>
